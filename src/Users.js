@@ -12,7 +12,7 @@ function Users() {
             setUsers(null)
             setError(null)
             setLoading(true)
-            const response = await axios.get('https://jsonplaceholder.typicode.com/users/')
+            const response = await axios.get()
             setUsers(response.data)
         } catch (e) {
             setError(e)
