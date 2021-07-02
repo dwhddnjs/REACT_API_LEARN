@@ -1,8 +1,8 @@
 import React from "react";
 import axios from "axios";
-import useAsync from "./useAsync";
+import { useAsync } from "react-async";
 
-async function getUser(id) {
+async function getUser({ id }) {
   const response = await axios.get(
     `https:jsonplaceholder.typicode.com/users/${id}`
   );
